@@ -15,4 +15,4 @@ export AMAZON_Q_VERSION=latest && \
     sudo rm -rf /var/lib/apt/lists/*
 
 # Update engine that codespace started for user
-curl -L -X POST "${ENGINE_EVENT_ENDPOINT}" -H "Content-Type: application/json" --data-raw "{ \"event\": \"github_codespace_started\" }
+curl -L -X POST "${ENGINE_EVENT_ENDPOINT}" -H "Content-Type: application/json" --data-raw "{ \"event\": \"github_codespace_started\" }"
