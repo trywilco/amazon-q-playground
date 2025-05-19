@@ -8,6 +8,7 @@ if echo "$Q_STATUS" | grep -q "Doctor found errors"; then
 fi
 
 
+: ${ENGINE_BASE_URL:="https://engine.wilco.gg"}
 WILCO_ID="`cat .wilco`"
 export ENGINE_EVENT_ENDPOINT="${ENGINE_BASE_URL}/users/${WILCO_ID}/event"
 
